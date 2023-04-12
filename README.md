@@ -3,7 +3,7 @@
 
 > **The code consists of :**
 
- **Signal Handling:** a signal handler function sigint_handler() that catches the SIGINT signal (Ctrl+C) and cancels all threads, destroys semaphores, and mutex, and exits gracefully.
+ **Signal Handling:** <span style="color:blue">a signal handler function sigint_handler() that catches the SIGINT signal (Ctrl+C) and cancels all threads, destroys semaphores, and mutex, and exits gracefully.</span>
 
 **Producer Thread Function:** responsible for generating random jobs (represented by size variable) and adding them to the buffer. It uses semaphores (full_sem and empty_sem) to control the buffer size and mutex (buffer_mutex) to protect the critical section while accessing the buffer. It also keeps track of the number of producers using a global variable number_of_producers.
 
