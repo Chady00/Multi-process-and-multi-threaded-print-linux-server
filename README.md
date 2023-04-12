@@ -61,8 +61,8 @@ For example, in LIFO, by adding 4 producers and 1 consumer ( to allow a proper d
 
 ![image](https://user-images.githubusercontent.com/84717550/231606535-d70d197f-c7c5-47d4-bbea-47a4e4a9d123.png)
 
-
 However in FIFO, the average waiting time is so much less:
+
 ![image](https://user-images.githubusercontent.com/84717550/231606553-1c583a0c-9bdc-417f-a00a-7baf38b18953.png)
 
 > 2D plots
