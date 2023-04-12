@@ -1,8 +1,9 @@
-
+<span style="color:blue">
 # Multi-process-and-multi-threaded-print-linux-server
-
+ </span>
+<span style="color:red">
 > **The code consists of :**
-
+</span>
  **Signal Handling:** a signal handler function sigint_handler() that catches the SIGINT signal (Ctrl+C) and cancels all threads, destroys semaphores, and mutex, and exits gracefully.
 
 **Producer Thread Function:** responsible for generating random jobs (represented by size variable) and adding them to the buffer. It uses semaphores (full_sem and empty_sem) to control the buffer size and mutex (buffer_mutex) to protect the critical section while accessing the buffer. It also keeps track of the number of producers using a global variable number_of_producers.
@@ -49,9 +50,9 @@ For instance, in LIFO implementation, dequeue from the queue is performed from t
 *The only adjustment in FIFO implementation is that the first index is always read, while shifting the queue elements to the left each time and decrementing the buffer_index:*
 
 ![image](https://user-images.githubusercontent.com/84717550/231606488-84a06bdf-f353-4f6e-a91f-532c6d35747a.png)
-
+<span style="color:red">
 > Execution Time and Average waiting time
-
+</span>
 The **execution time** is the time required for all producer/consumer threads to finish execution ( including time to request + time to process request ).
 In FIFO, since the average waiting time for items in the buffer tends to be more balanced among all the items, as they are dequeued in the order they are enqueued.
 That leads to an average waiting time less than LIFO implementation.
@@ -62,9 +63,9 @@ For example, in LIFO, by adding 4 producers and 1 consumer ( to allow a proper d
 ![image](https://user-images.githubusercontent.com/84717550/231606535-d70d197f-c7c5-47d4-bbea-47a4e4a9d123.png)
 However in FIFO, the average waiting time is so much less:
 ![image](https://user-images.githubusercontent.com/84717550/231606553-1c583a0c-9bdc-417f-a00a-7baf38b18953.png)
-
+<span style="color:red">
 > 2D plots
-
+</span>
 Here are some 2D plots representing the relation between the number of consumers and producers using LIFO:
 Since the number of jobs are randomized for each producer, in order to obtain correct results, I assumed a fixed number of jobs = 3
 
