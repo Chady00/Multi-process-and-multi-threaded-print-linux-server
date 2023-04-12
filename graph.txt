@@ -1,8 +1,0 @@
-[Vertices]
-a
-b
-c
-
-[Edges]
-a b 6
-b a 5
